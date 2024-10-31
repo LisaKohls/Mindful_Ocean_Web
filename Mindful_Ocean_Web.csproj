@@ -15,12 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="server\controllers\" />
-      <Folder Include="server\data\" />
-      <Folder Include="server\interfaces\" />
-      <Folder Include="server\model\" />
-      <Folder Include="server\repositories\" />
-      <Folder Include="server\services\" />
+      <Folder Include="server\service\" />
     </ItemGroup>
 
     <ItemGroup>
