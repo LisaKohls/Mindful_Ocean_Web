@@ -1,0 +1,6 @@
+@Mindful_Ocean_Web_HostAddress = http://localhost:5077
+
+GET {{Mindful_Ocean_Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
