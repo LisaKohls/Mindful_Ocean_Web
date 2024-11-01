@@ -2,5 +2,5 @@
 
 public interface IOilSpillsRepository
 {
-    public Task<string> GetOilSpillsByRegion(string region);
+    public Task<string> GetOilSpillsBySearchParam(string searchparam);
 }

@@ -12,10 +12,10 @@ public class OilSpillsRepository: IOilSpillsRepository
         _httpClient = httpClient;
     }
 
-    public async Task<string> GetOilSpillsByRegion(string region)
+    public async Task<string> GetOilSpillsBySearchParam(string searchparam)
     {
         try {
-            var requestUrl = "https://www.data.qld.gov.au/api/3/action/datastore_search?resource_id=6d5865f0-b7fc-4770-a303-a0b1f85f661f&q=" + region;
+            var requestUrl = "https://www.data.qld.gov.au/api/3/action/datastore_search?resource_id=6d5865f0-b7fc-4770-a303-a0b1f85f661f&q=" + searchparam;
 
             HttpResponseMessage response = await _httpClient.GetAsync(requestUrl);
             
