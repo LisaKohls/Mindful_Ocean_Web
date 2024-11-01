@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@font-face {
+    font-family: 'Red Hat Display';
+    src: local('Red Hat Display'), url(./fonts/red_hat_display/static/RedHatDisplay-Black.ttf) format('ttf');
+}
+@tailwind utilities;
+
