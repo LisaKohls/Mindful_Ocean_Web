@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import './landingpage.css';
 import gsap from 'gsap';
+import LandingpageImage from '../resources/LandingpageImage.png'
 
 const LandingPage: React.FC = () => {
     return (
@@ -12,7 +13,7 @@ const LandingPage: React.FC = () => {
         </div>
         <div className="image-container">
             <img
-                src="https://assets-global.website-files.com/63ec206c5542613e2e5aa784/643312a6bc4ac122fc4e3afa_main%20home.webp"
+                src={LandingpageImage}
                 alt="image"/>
         </div>
     </div>

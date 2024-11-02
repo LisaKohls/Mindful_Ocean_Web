@@ -5,7 +5,7 @@ import LandingPage from "./landingPageScrollEffect/LandingPage";
 
 function App() {
   return (
-      <div className="bg-primary text-white">
+      <div className="bg-hero-pattern bg-cover bg-center text-white" >
           <LandingPage />
           <MainLayout/>
       </div>

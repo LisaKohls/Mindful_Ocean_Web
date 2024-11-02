@@ -1,0 +1,31 @@
+﻿.pulse:hover,
+.pulse:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 #fff; }
+}
+
+.pulse { --color: #fff; --hover: hsl(340, 75%, 65%); }
+
+.pulse {
+    color: #fff;
+    transition: 0.25s;
+}
+
+.pulse:hover,
+.pulse:focus {
+    border-color: #fff;
+    color: #fff;
+}
+
+.pulse {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+}

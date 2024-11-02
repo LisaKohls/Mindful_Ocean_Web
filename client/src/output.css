@@ -671,9 +671,16 @@ video {
   border-width: 1px;
 }
 
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 59 73 / var(--tw-bg-opacity));
+.bg-hero-pattern {
+  background-image: url('./resources/underwater.jpeg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-14 {

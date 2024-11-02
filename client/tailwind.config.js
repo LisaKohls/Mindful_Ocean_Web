@@ -10,6 +10,9 @@ module.exports = {
             fontFamily:{
                 'redhat' : ['Red Hat Display', 'sans-serif']
             },
+            backgroundImage: {
+                'hero-pattern': "url('./resources/underwater.jpeg')",
+            },
         },
     },
     plugins: [],
