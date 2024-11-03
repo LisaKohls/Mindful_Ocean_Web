@@ -22,16 +22,12 @@ const MainLayout: React.FC = () => {
                 <Arrow onClick={scrollToFirstGridElement}/>
             </div>*/}
             <InformUserSection
-                text_one={'1'}
-                text_two={'2'}
-                text_three={'3'}
-                text_four={'4'}
                 firstGridElementRef={firstGridElementRef}
             />
             {/*<div className="flex justify-center mt-8 box-border">*/}
             <div className="flex items-center justify-center w-full h-[350px]">
                 {/*<CircularBtn title={'Start'}/>*/}
-                <StartBtn />
+                <StartBtn title={'Start'}/>
             </div>
         </div>
 

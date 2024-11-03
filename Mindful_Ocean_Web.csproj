@@ -15,7 +15,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="client\src\resources\" />
       <Folder Include="server\service\" />
     </ItemGroup>
 

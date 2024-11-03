@@ -1,9 +1,12 @@
 ﻿import React from 'react';
 import './startBtn.css';
 
-const StartBtn: React.FC = () => {
+interface CircularBtnProps {
+    title: string;
+}
+const StartBtn: React.FC<CircularBtnProps> = ({title}) => {
     return (
-        <button className="pulse"><span>Start</span></button>
+        <button className="pulse"><span>{title}</span></button>
     )
 }
 
