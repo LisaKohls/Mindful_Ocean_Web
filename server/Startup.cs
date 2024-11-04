@@ -24,7 +24,7 @@ public class Startup
         services.AddScoped<IPlasticWasteRepository, PlasticWasteRepository>();
     
         services.AddDbContext<ApplicationDbContext>(
-            context => context.UseMySql(Configuration.GetConnectionString("DefaultConnection"), ServerVersion.Parse("5.7.24-mysql"))
+            context => context.UseMySql(Configuration.GetConnectionString("defaultConnection:ConnectionString"), ServerVersion.Parse("5.7.24-mysql"))
             );
     }
 
