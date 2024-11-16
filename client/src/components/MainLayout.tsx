@@ -5,6 +5,7 @@ import InformUserSection from "./informUserSection";
 import CircularBtn from "./circularBtn";
 import StartBtn from "./startBtn/startBtn";
 import NavBar from "./navBar/navBar.tsx";
+import QuoteLayout from "./quoteLayout/QuoteLayout.tsx";
 
 const MainLayout: React.FC = () => {
     const firstGridElementRef = useRef<HTMLDivElement | null>(null); 
@@ -41,6 +42,7 @@ const MainLayout: React.FC = () => {
                     
                 <Arrow onClick={scrollToFirstGridElement}/>
             </div>*/}
+            <QuoteLayout/>
             <InformUserSection
                 firstGridElementRef={firstGridElementRef}
             />
