@@ -551,8 +551,20 @@ video {
   src: local('Red Hat Display'), url(./fonts/red_hat_display/static/RedHatDisplay-Black.ttf) format('ttf');
 }
 
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
 .fixed {
   position: fixed;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .relative {
@@ -563,12 +575,24 @@ video {
   bottom: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-0 {
   right: 0px;
 }
 
+.right-9 {
+  right: 2.25rem;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-2 {
+  top: 0.5rem;
 }
 
 .col-start-2 {
@@ -591,12 +615,20 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-2\.5 {
+  margin-bottom: 0.625rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
 }
 
 .mt-64 {
@@ -619,8 +651,16 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-12 {
   height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-\[350px\] {
@@ -637,6 +677,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.resize {
+  resize: both;
 }
 
 .grid-cols-2 {
@@ -659,6 +703,10 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-64 {
   gap: 16rem;
 }
@@ -672,7 +720,7 @@ video {
 }
 
 .bg-hero-pattern {
-  background-image: url('./resources/underwater.png');
+  background-image: url('./resources/Prototype_scroll.png');
 }
 
 .bg-cover {
@@ -699,6 +747,11 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-3 {
@@ -733,6 +786,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.no-underline {
+  text-decoration-line: none;
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -747,5 +804,11 @@ video {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
 }
 

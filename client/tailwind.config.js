@@ -11,7 +11,7 @@ module.exports = {
                 'redhat' : ['Red Hat Display', 'sans-serif']
             },
             backgroundImage: {
-                'hero-pattern': "url('./resources/underwater.png')",
+                'hero-pattern': "url('./resources/Prototype_scroll.png')",
             },
         },
     },

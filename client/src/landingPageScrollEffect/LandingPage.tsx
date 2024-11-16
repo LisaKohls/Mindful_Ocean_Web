@@ -6,16 +6,16 @@ import LandingpageImage from '../resources/LandingpageImage.png'
 const LandingPage: React.FC = () => {
     return (
         <div className="wrapper">
-        <div className="content">
-            <section className="section hero"></section>
-            <section className="section gradient-purple"></section>
-            <section className="section gradient-blue"></section>
-        </div>
-        <div className="image-container">
-            <img
-                src={LandingpageImage}
-                alt="image"/>
-        </div>
+            <div className="content">
+                <section className="section hero"></section>
+                <section className="section gradient-purple"></section>
+                <section className="section gradient-blue"></section>
+            </div>
+            <div className="image-container">
+                <img
+                    src={LandingpageImage}
+                    alt="image"/>
+            </div>
     </div>
     )
 }
