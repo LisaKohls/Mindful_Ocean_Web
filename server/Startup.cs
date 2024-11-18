@@ -2,6 +2,7 @@
 using Mindful_Ocean_Web.server.data;
 using Mindful_Ocean_Web.server.Interface;
 using Mindful_Ocean_Web.server.repository;
+using Mindful_Ocean_Web.server.service;
 
 namespace Mindful_Ocean_Web.server;
 
@@ -22,9 +23,13 @@ public class Startup
         services.AddHttpClient();
         services.AddScoped<IOilSpillsRepository, OilSpillsRepository>();
         services.AddScoped<IPlasticWasteRepository, PlasticWasteRepository>();
+        services.AddScoped<ILandingPageRepository, LandingPageRepository>();
+        services.AddScoped<OilSpillsService>();
+        services.AddScoped<LandingPageService>();
+        services.AddScoped<PlasticWasteService>();
     
         services.AddDbContext<ApplicationDbContext>(
-            context => context.UseMySql(Configuration.GetConnectionString("defaultConnection:ConnectionString"), ServerVersion.Parse("5.7.24-mysql"))
+            context => context.UseMySql(Configuration.GetConnectionString("defaultConnection:connectionString"), ServerVersion.Parse("5.7.24-mysql"))
             );
     }
 

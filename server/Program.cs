@@ -1,6 +1,4 @@
-using Microsoft.EntityFrameworkCore;
 using Mindful_Ocean_Web.server;
-using Mindful_Ocean_Web.server.data;
 
 var builder = WebApplication.CreateBuilder(args);
 //builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(builder.Configuration["defaultCconnection:ConnectionString"]);

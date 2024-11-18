@@ -761,3 +761,9 @@ video {
   outline-offset: 2px;
 }
 
+@media (max-width: 1111px) {
+  .max-\[1111px\]\:gap-8 {
+    gap: 2rem;
+  }
+}
+

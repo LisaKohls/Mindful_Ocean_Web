@@ -7,7 +7,7 @@ using Mindful_Ocean_Web.server.model;
 namespace Mindful_Ocean_Web.server.controller;
 
 [ApiController]
-[Route("api/plasticwaste")]
+[Route("api/plasticwaste/")]
 public class PlasticWasteController: ControllerBase
 {
     private readonly IPlasticWasteRepository _plasticWasteRepository;

@@ -10,6 +10,7 @@ public class ApplicationDbContext: DbContext
     }
     public DbSet<PlasticWaste>PlasticWaste { get; set; }
     public DbSet<OceanDepth>OceanDepths { get; set; }
+    public DbSet<LandingPageContent>LandingPageContents { get; set; }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -18,6 +19,9 @@ public class ApplicationDbContext: DbContext
         
         modelBuilder.Entity<OceanDepth>()
             .HasKey(p => new { p.Longitude, p.Latitude });
+        
+        modelBuilder.Entity<LandingPageContent>()
+            .HasKey(p => p.Content_id);
     }
     
 }
