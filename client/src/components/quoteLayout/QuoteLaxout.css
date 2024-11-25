@@ -10,6 +10,9 @@
 .container-quote {
     display: flex;
     flex-direction: column;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 5rem;
 }
 
 .container-details {

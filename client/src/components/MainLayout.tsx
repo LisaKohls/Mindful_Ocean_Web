@@ -34,7 +34,7 @@ const MainLayout: React.FC = () => {
 
     return (
         <div>
-            <NavBar visibility={`${showNav ? "visible" : "invisible"}`} />
+            <NavBar visibility={`${showNav ? "visible" : "invisible"}`}/>
             { /*<div className="flex flex-col items-center justify-center mb-10">
                 
                     <MeterBar longitude={1} latitude={1}/>
@@ -43,6 +43,8 @@ const MainLayout: React.FC = () => {
                 <Arrow onClick={scrollToFirstGridElement}/>
             </div>*/}
             <QuoteLayout/>
+            <br/>
+            <br/>
             <InformUserSection
                 firstGridElementRef={firstGridElementRef}
             />
