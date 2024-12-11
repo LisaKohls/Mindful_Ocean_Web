@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import './QuoteLaxout.css'
+import './QuoteLayout.css'
 import { FaWater } from "react-icons/fa";
 import { IoIosWater } from "react-icons/io";
 import { PiFishSimpleBold } from "react-icons/pi";

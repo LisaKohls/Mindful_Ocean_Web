@@ -5,6 +5,19 @@ export const contentInformUser_1 = "Turtlelly Amazing was created to address the
 export const contentInformUser_2 = "Marine pollution, especially garbage accumulation and oil spills, is a severe global environmental issue that threatens marine ecosystems and biodiversity. Did you know that Brisbane's worst ocean pollutant is by Ships with 20000 estimated liters per year?";
 export const contentInformUser_3 = "This project aims to address this gap by providing an engaging, immersive, and data-driven experience that educates users on the severity of ocean pollution and its direct impact on marine life.";
 
+    
+/*
+Inform user about sea life
+ */
+
+export const titleInform = "Pollution and Effects on Sealife"
+export const contentInform = "The ocean receives approximately 8 million tons of plastic waste each year, " +
+    "with studies showing that up to 90% of seabirds and 52% of all sea turtles have ingested plastic. " +
+    "Plastic debris, particularly microplastics, has detrimental effects on marine ecosystems. " +
+    "When marine animals mistake plastic for food, it can block their digestive tracts, " +
+    "lead to malnutrition, and even death. "
+    
+
 /*
 Inform user with quote and short information
  */

@@ -65,6 +65,7 @@ const NavBar: React.FC<VisibilityProps> = ({visibility}) => {
                 <a href="/main">Main</a>
                 <a href="/about">About</a>
                 <a href="/donations">Donations</a>
+                <a href="/donations">Newsletter</a>
                 <a href="/contact">Contact</a>
                 <button className={"nav-btn nav-close-btn"} onClick={showNavbar}>
                     ✕
