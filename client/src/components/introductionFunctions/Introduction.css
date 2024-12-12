@@ -1,0 +1,43 @@
+﻿.wrapper-intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: white; 
+    height: 100vh;
+    padding: 10rem;
+}
+
+.container-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    padding-right: 2rem; 
+}
+
+.container-intro-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2; 
+    margin-bottom: 1rem; 
+}
+
+.container-intro-description {
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+    margin-bottom: 2rem; 
+}
+
+.container-intro-image {
+    height: 80%; 
+    width: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.intro-image {
+    width: auto; 
+    height: auto; 
+    transform: unset !important;
+}

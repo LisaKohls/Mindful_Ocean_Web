@@ -4,19 +4,18 @@
     justify-content: space-between;
     flex-direction: row;
     text-align: center;
-    padding: 1rem;
+    padding: 10rem;
 }
 
 .container-inform {
     flex-direction: column;
-    padding-left: 10rem;
-    padding-right: 5rem;
+  
 }
 
 .container-detailscontent {
     flex-direction: column;
+    padding-bottom: 1rem;
     text-align: justify;
-    padding-right: 10rem;
 }
 
 .container-details-buttons {
@@ -40,6 +39,10 @@
     padding: 0.5rem;
     margin-top: 1rem;
     margin-right: 1rem;
+}
+
+.container-details-link {
+    margin-left: 10px;
 }
 
 

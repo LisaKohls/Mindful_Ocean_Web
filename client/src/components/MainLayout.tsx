@@ -8,6 +8,7 @@ import NavBar from "./navBar/navBar.tsx";
 import QuoteLayout from "./quoteLayout/QuoteLayout.tsx";
 import InformSection from "./informationSection/InformSection.tsx";
 import ImageSection from "./quoteLayout/ImageSection.tsx";
+import Introduction from "./introductionFunctions/Introduction.tsx";
 
 const MainLayout: React.FC = () => {
     const firstGridElementRef = useRef<HTMLDivElement | null>(null); 
@@ -55,6 +56,11 @@ const MainLayout: React.FC = () => {
             <br/>
             <br/>
             <QuoteLayout/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Introduction/>
             <br/>
             <br/>
             <br/>

@@ -4,11 +4,11 @@ import {fetchOilSpillsApi} from "../../api/FetchOilSpillsApi.tsx";
 import OilSpillSetting from "../../interfaces/OilSpillSetting.tsx";
 import oilSpillSetting from "../../interfaces/OilSpillSetting.tsx";
 
-interface CircularBtnProps {
+interface btnProps {
     title: string;
 }
 
-const StartBtn: React.FC<CircularBtnProps> = ({title}) => {
+const StartBtn: React.FC<btnProps> = ({title}) => {
     
     const oilSpillSettings: OilSpillSetting = {
         year: 2019,

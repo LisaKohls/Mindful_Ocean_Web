@@ -4,6 +4,7 @@ import {FaArrowRight, FaWater} from "react-icons/fa";
 import { IoIosWater } from "react-icons/io";
 import { PiFishSimpleBold } from "react-icons/pi";
 import { contentInform, titleInform } from '../../resources/landigpageTextContent.tsx';
+import StartBtn from "../startBtn/startBtn.tsx";
 
 const InformSection: React.FC = () => {
     return (
@@ -15,9 +16,8 @@ const InformSection: React.FC = () => {
             <div className="container-detailscontent">
                 <div className="container-details-content">{contentInform}</div>
                 <div className="">
-                    <button className="container-details-buttons">Learn more</button>
+                    <StartBtn title="Learn more"/>
                     <a className="container-details-link">Interactive journey {'>'} </a>
-                    
                 </div>
             </div>
         </div>
