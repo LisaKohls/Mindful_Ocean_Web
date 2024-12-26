@@ -31,15 +31,9 @@ export async function fetchOilSpillsApi(oilSpillSetting: OilSpillSetting): Promi
     });
 
     const url = `https://www.data.qld.gov.au/api/3/action/datastore_search?${queryParams.toString()}`;
-
+    
     try {
-        const response = await fetch(url, {
-            method: 'GET',
-            headers: {
-                'Accept': 'application/json',
-                'Access-Control-Allow-Origin': '*' 
-            }
-        });
+        const response = await fetch(url);
 
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -47,7 +41,7 @@ export async function fetchOilSpillsApi(oilSpillSetting: OilSpillSetting): Promi
 
         const data = await response.json();
         alert('Total results found: ' + data.result.total);
-
+        console.log(data.result);
         return data.result.total; 
     } catch (error) {
         console.error('Error fetching data:', error);

@@ -1,17 +1,17 @@
 ﻿import React from 'react';
 import './InformSection.css'
-import {FaArrowRight, FaWater} from "react-icons/fa";
-import { IoIosWater } from "react-icons/io";
-import { PiFishSimpleBold } from "react-icons/pi";
 import { contentInform, titleInform } from '../../resources/landigpageTextContent.tsx';
 import StartBtn from "../startBtn/startBtn.tsx";
+import {fetchContentBySection} from "../../api/FetchLandingPageApi.tsx";
 
 const InformSection: React.FC = () => {
+    let data = fetchContentBySection('informationSection');
+        
     return (
         <div className="container">
             <div className="container-inform">
                 <div className="container-inform-author">Pollution</div>
-                <div className="container-inform-title">{titleInform}</div>
+                <div className="container-inform-title">{}</div>
             </div>
             <div className="container-detailscontent">
                 <div className="container-details-content">{contentInform}</div>

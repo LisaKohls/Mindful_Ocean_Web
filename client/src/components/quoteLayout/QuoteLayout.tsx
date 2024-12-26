@@ -1,18 +1,23 @@
-﻿import React from 'react';
+﻿import React, { useEffect, useRef } from 'react';
 import './QuoteLayout.css'
 import { FaWater } from "react-icons/fa";
 import { IoIosWater } from "react-icons/io";
 import { PiFishSimpleBold } from "react-icons/pi";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { contentQuote_1, contentQuote_2, contentQuote_3, contentDetail_1, contentDetail_2, contentDetail_3, author, quote } from '../../resources/landigpageTextContent.tsx';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const QuoteLayout: React.FC = () => {
+   
     return (
         <div className="wrapper">
             <div className="container-quote">
                 <div className="quote">{quote}</div>
                 <div className="author">{author}</div>
             </div>
-            <div className="container-details">
+            <div className="container-details" >
                 <div className="content">
                     <FaWater/>
                     <div className="content-bold">{contentQuote_1}</div>

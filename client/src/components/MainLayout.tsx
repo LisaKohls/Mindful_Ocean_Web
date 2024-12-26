@@ -1,14 +1,12 @@
 ﻿import React, {useEffect, useRef, useState} from 'react';
-import Arrow from "./arrow";
-import InteractiveTitle from "./interactiveTitle";
 import InformUserSection from "./informUserSection";
-import CircularBtn from "./circularBtn";
 import StartBtn from "./startBtn/startBtn";
 import NavBar from "./navBar/navBar.tsx";
 import QuoteLayout from "./quoteLayout/QuoteLayout.tsx";
 import InformSection from "./informationSection/InformSection.tsx";
 import ImageSection from "./quoteLayout/ImageSection.tsx";
 import Introduction from "./introductionFunctions/Introduction.tsx";
+import ScrollImages from "./scrollImageEffect/ScrollImages.tsx";
 
 const MainLayout: React.FC = () => {
     const firstGridElementRef = useRef<HTMLDivElement | null>(null); 
@@ -61,6 +59,7 @@ const MainLayout: React.FC = () => {
             <br/>
             <br/>
             <Introduction/>
+            <br/>
             <br/>
             <br/>
             <br/>
