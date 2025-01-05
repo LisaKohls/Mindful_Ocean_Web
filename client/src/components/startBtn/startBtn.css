@@ -26,6 +26,11 @@
     border: 2px solid;
     font: inherit;
     line-height: 1;
-    margin-top: 20px;
     padding: 1em 2em;
+}
+
+.startBtn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
 }

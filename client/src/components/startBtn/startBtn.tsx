@@ -18,7 +18,9 @@ const StartBtn: React.FC<btnProps> = ({title}) => {
     };
     
     return (
+        <div className="startBtn">
         <button className="pulse" onClick={() => testOilSpillsApi(oilSpillSettings)}><span>{title}</span></button>
+        </div>
     )
 }
 
