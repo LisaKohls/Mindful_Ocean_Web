@@ -2,8 +2,6 @@
 import './startBtn.css';
 import {fetchOilSpillsApi} from "../../api/FetchOilSpillsApi.tsx";
 import OilSpillSetting from "../../interfaces/OilSpillSetting.tsx";
-import oilSpillSetting from "../../interfaces/OilSpillSetting.tsx";
-import {fetchContentBySection} from "../../api/FetchLandingPageApi.tsx";
 
 interface btnProps {
     title: string;
@@ -18,9 +16,7 @@ const StartBtn: React.FC<btnProps> = ({title}) => {
     };
     
     return (
-        <div className="startBtn">
         <button className="pulse" onClick={() => testOilSpillsApi(oilSpillSettings)}><span>{title}</span></button>
-        </div>
     )
 }
 

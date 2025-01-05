@@ -8,6 +8,8 @@ import Introduction from "./introductionFunctions/Introduction.tsx";
 import GlowingFont from "./TextAnimations/GlowingFont.tsx";
 import Partners from "./quoteLayout/Partners.tsx";
 import './TextAnimations/NormalText.css';
+import CenteredImage from "./images/CenteredImage.tsx";
+import plasticBottle from "../resources/content_images/plastic_bottle.png"
 
 const MainLayout: React.FC = () => {
     const firstGridElementRef = useRef<HTMLDivElement | null>(null); 
@@ -50,7 +52,10 @@ const MainLayout: React.FC = () => {
             
             <div className="normalText">Are You Ready?</div>
             <GlowingFont name='Start your journey now'/>
-            <StartBtn title={'Start'}/>
+            <div className="flex items-center justify-center w-full ">
+                <StartBtn title={'Start'}/>
+            </div>
+            <CenteredImage url={plasticBottle}/>
         </div>
 
     );

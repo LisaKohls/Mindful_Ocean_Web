@@ -1,8 +1,6 @@
 ﻿import React, {useEffect, useState} from 'react';
 import './InformSection.css'
-import { contentInform, titleInform } from '../../resources/landigpageTextContent.tsx';
 import StartBtn from "../startBtn/startBtn.tsx";
-import {fetchContentBySection} from "../../api/FetchLandingPageApi.tsx";
 import {useFetchDataService} from "../../services/fetchDataService.tsx";
 
 const InformSection: React.FC = () => {
@@ -21,7 +19,7 @@ const InformSection: React.FC = () => {
             </div>
             <div className="container-detailscontent">
                 <div className="container-details-content">{data.content}</div>
-                <div className="">
+                <div className="container-details-content-link">
                     <StartBtn title="Learn more"/>
                     <a className="container-details-link">Interactive journey {'>'} </a>
                 </div>

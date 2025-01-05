@@ -1,0 +1,10 @@
+.centered-image {
+    height: 300px;
+    width: auto;
+    padding: 50px;
+}
+
+.centered-image-container {
+    display: flex;
+    justify-content: center;
+}

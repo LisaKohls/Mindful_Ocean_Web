@@ -45,6 +45,10 @@
     margin-left: 10px;
 }
 
+.container-details-content-link {
+    margin-top: 20px;
+}
+
 @media (min-width: 1024px) {
     .container {
         max-width: 100%;
