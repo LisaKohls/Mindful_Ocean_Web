@@ -10,6 +10,7 @@ import Partners from "./quoteLayout/Partners.tsx";
 import './TextAnimations/NormalText.css';
 import CenteredImage from "./images/CenteredImage.tsx";
 import plasticBottle from "../resources/content_images/plastic_bottle.png"
+import Footer from "./Footer/Footer.tsx";
 
 const MainLayout: React.FC = () => {
     const firstGridElementRef = useRef<HTMLDivElement | null>(null); 
@@ -56,6 +57,7 @@ const MainLayout: React.FC = () => {
                 <StartBtn title={'Start'}/>
             </div>
             <CenteredImage url={plasticBottle}/>
+            <Footer/>
         </div>
 
     );
