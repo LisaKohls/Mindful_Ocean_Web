@@ -1,17 +1,22 @@
 ﻿
 
 
-const url = 'https://localhost:7026/api/landingpage/contentId/';
+const url = 'http://localhost:5077/api/landingpage/contentId/';
 export async function fetchContentBySection(sectionName: string): Promise<any>{
     let contentId = specificContent(sectionName);
 
     try {
-        const response = await fetch(url + contentId);
+        const response = await fetch(url + contentId, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
         if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);
         }
         const json = await response.json();
-        console.log(json.value.title); 
+        console.log('result:' + json.value.title); 
         return {
             title: json.value.title,
             content: json.value.content,

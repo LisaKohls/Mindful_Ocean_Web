@@ -3,6 +3,7 @@ import './startBtn.css';
 import {fetchOilSpillsApi} from "../../api/FetchOilSpillsApi.tsx";
 import OilSpillSetting from "../../interfaces/OilSpillSetting.tsx";
 import oilSpillSetting from "../../interfaces/OilSpillSetting.tsx";
+import {fetchContentBySection} from "../../api/FetchLandingPageApi.tsx";
 
 interface btnProps {
     title: string;

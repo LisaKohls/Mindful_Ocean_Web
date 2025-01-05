@@ -16,6 +16,7 @@ builder.Services.AddScoped<LandingPageService>();
 builder.Services.AddScoped<PlasticWasteService>();
 builder.Configuration.AddJsonFile("./server/appsettings.Development.json", optional: false, reloadOnChange: true);
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySQL(builder.Configuration["dbContextSettings:ConnectionString"]));
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin", policy =>
@@ -23,6 +24,17 @@ builder.Services.AddCors(options =>
         policy.WithOrigins("*")
             .AllowAnyMethod()
             .AllowAnyHeader();
+    });
+    
+});
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000") // React-URL
+            .AllowAnyHeader()
+            .AllowAnyMethod();
     });
 });
 
@@ -47,6 +59,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("AllowSpecificOrigin");
+app.UseCors("AllowReactApp");
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
