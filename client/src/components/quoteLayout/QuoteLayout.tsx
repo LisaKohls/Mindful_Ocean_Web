@@ -5,7 +5,6 @@ import { IoIosWater } from "react-icons/io";
 import { PiFishSimpleBold } from "react-icons/pi";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { contentQuote_1, contentQuote_2, contentQuote_3, contentDetail_1, contentDetail_2, contentDetail_3, author, quote } from '../../resources/landigpageTextContent.tsx';
 import {useFetchDataService} from "../../services/fetchDataService.tsx";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -29,17 +28,17 @@ const QuoteLayout: React.FC = () => {
             </div>
             <div className="container-details" >
                 <div className="content">
-                    <FaWater/>
+                    <FaWater size="64px"/>
                     <div className="content-bold">{quoteDetail1?.title}</div>
                     <div className="content-details">{quoteDetail1?.content}</div>
                 </div>
                 <div className="content">
-                    <IoIosWater />
+                    <IoIosWater size="64px"/>
                     <div className="content-bold">{quoteDetail2?.title}</div>
                     <div className="content-details">{quoteDetail2?.content}</div>
                 </div>
                 <div className="content">
-                    <PiFishSimpleBold />
+                    <PiFishSimpleBold size="64px" />
                     <div className="content-bold">{quoteDetail3?.title}</div>
                     <div className="content-details">{quoteDetail3?.content}</div>
                 </div>

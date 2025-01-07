@@ -10,15 +10,15 @@ const Partners: React.FC = () => {
             </div>
         <div className="container-details">
             <div className="content">
-                <GiTurtle />
+                <GiTurtle size="64px"/>
                 <div className="content-bold">SeaChange Collective</div>
             </div>
             <div className="content">
-                <LuRecycle />
+                <LuRecycle size="64px"/>
                 <div className="content-bold">Zero Waste Europe</div>
             </div>
             <div className="content">
-                <GiThreeLeaves />
+                <GiThreeLeaves size="64px"/>
                 <div className="content-bold">World Wildlife Fund</div>
             </div>
         </div>

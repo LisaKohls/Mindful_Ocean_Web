@@ -12,7 +12,7 @@ Contributors: Janniella Heimig, Maria Guerreiro, Lisa Kohls
 - open in Chrome or Firefox Browser for the animations to work
 
 ### Backend
-- start MAMP
+- start MAMP, make sure the server port is 3306. 
 - import the .sql file in MySqlWorkbench and run the script
 - make sure the MySQL Password is the same as in appsettings.Development
 - navigate to *cd Properties* open *launchSettings.json* and select run http
