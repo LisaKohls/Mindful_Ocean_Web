@@ -1,6 +1,5 @@
 ﻿
 
-
 const url = 'http://localhost:5077/api/landingpage/contentId/';
 export async function fetchContentBySection(sectionName: string): Promise<any>{
     let contentId = specificContent(sectionName);
@@ -16,7 +15,6 @@ export async function fetchContentBySection(sectionName: string): Promise<any>{
             throw new Error(`Response status: ${response.status}`);
         }
         const json = await response.json();
-        console.log('result:' + json.value.title); 
         return {
             title: json.value.title,
             content: json.value.content,
@@ -26,7 +24,6 @@ export async function fetchContentBySection(sectionName: string): Promise<any>{
     }
     
 }
-
 
 
 function specificContent(sectionName: string): number {

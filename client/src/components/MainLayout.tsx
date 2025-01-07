@@ -13,11 +13,6 @@ import plasticBottle from "../resources/content_images/plastic_bottle.png"
 import Footer from "./Footer/Footer.tsx";
 
 const MainLayout: React.FC = () => {
-    const firstGridElementRef = useRef<HTMLDivElement | null>(null); 
-/*
-    const scrollToFirstGridElement = () => {
-        firstGridElementRef.current?.scrollIntoView({ behavior: 'smooth' }); 
-    };*/
 
     const [showNav, setShowNav] = useState(false);
 

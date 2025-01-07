@@ -1,6 +1,7 @@
 ﻿import { FaBars } from "react-icons/fa"
 import React, {useEffect, useRef} from "react"
 import './navBar.css';
+import whiteLogo from '../../resources/logo/white_logo.png'
 
 interface VisibilityProps{
     visibility: string;
@@ -59,7 +60,7 @@ const NavBar: React.FC<VisibilityProps> = ({visibility}) => {
     return (
         <header className={visibility}>
             <a href="..">
-                MINDFUL OCEAN
+                <img src={whiteLogo} alt="Mindful Logo" width="75px" height="75px"/>
             </a>
             <nav ref={navRef}>
                 <a href="/main">Main</a>

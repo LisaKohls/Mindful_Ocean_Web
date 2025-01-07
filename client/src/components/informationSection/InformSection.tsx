@@ -1,4 +1,4 @@
-﻿import React, {useEffect, useState} from 'react';
+﻿import React from 'react';
 import './InformSection.css'
 import StartBtn from "../startBtn/startBtn.tsx";
 import {useFetchDataService} from "../../services/fetchDataService.tsx";

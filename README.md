@@ -13,6 +13,7 @@ Contributors: Janniella Heimig, Maria Guerreiro, Lisa Kohls
 
 ### Backend
 - start MAMP, make sure the server port is 3306. 
+- download the sql file https://drive.google.com/file/d/1l-HrIn0MVIBgdEq5XaT4i_kbKyZ7d_OG/view?usp=sharing 
 - import the .sql file in MySqlWorkbench and run the script
 - make sure the MySQL Password is the same as in appsettings.Development
 - navigate to *cd Properties* open *launchSettings.json* and select run http

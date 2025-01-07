@@ -1,6 +1,4 @@
 ﻿import OilSpillSetting from "../interfaces/OilSpillSetting.tsx";
-import $ from 'jquery';
-
 
 const YEAR_2018 = '2ce3cf0b-6246-4512-b064-addfc7d00bb8';
 const YEAR_2019 = '6d5865f0-b7fc-4770-a303-a0b1f85f661f';
@@ -40,8 +38,6 @@ export async function fetchOilSpillsApi(oilSpillSetting: OilSpillSetting): Promi
         }
 
         const data = await response.json();
-        alert('Total results found: ' + data.result.total);
-        console.log(data.result);
         return data.result.total; 
     } catch (error) {
         console.error('Error fetching data:', error);
