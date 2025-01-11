@@ -19,3 +19,12 @@ Contributors: Janniella Heimig, Maria Guerreiro, Lisa Kohls
 - navigate to *cd Properties* open *launchSettings.json* and select run http
 - its important to run Backend and Frontend on http 
 - in swagger test the first Endpoint by entering a city or harbour in Australia like *Brisbane* to get all ocean pollutants for that area
+
+#### UNREAL ENGINE EXE #######
+How to play
+-W forward S backwards A to the left side and D for the right
+-go up with spacebar
+-go down with CTRL
+-Go closer to the shinny balls of light to get information the balls will guide you until the trash dangerous zone but you can always walk freely in the map
+****************************    LINK FOR UNREAL ENGINE EXE     ****************************************
+https://we.tl/t-qz4QrR2hwx
