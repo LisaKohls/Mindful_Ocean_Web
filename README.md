@@ -1,30 +1,200 @@
 # Mindful Ocean
-### by Turtlelly Amazing
 
-Contributors: Janniella Heimig, Maria Guerreiro, Lisa Kohls
+Mindful Ocean is an interactive full-stack application focused on environmental awareness and ocean pollution visualization.  
+The project combines a React frontend, ASP.NET backend, MySQL database and Unreal Engine 3D environment to provide users with immersive access to environmental pollution data.
 
-## How to start the application
-- clone the project by copying the url
-- navigate to *cd /client* run *npm install*
+---
 
-### Frontend
-- for starting the frontend stay in the client folder and run *npm start*
-- open in Chrome or Firefox Browser for the animations to work
+# Overview
 
-### Backend
-- start MAMP, make sure the server port is 3306. 
-- download the sql file https://drive.google.com/file/d/1l-HrIn0MVIBgdEq5XaT4i_kbKyZ7d_OG/view?usp=sharing 
-- import the .sql file in MySqlWorkbench and run the script
-- make sure the MySQL Password is the same as in appsettings.Development
-- navigate to *cd Properties* open *launchSettings.json* and select run http
-- its important to run Backend and Frontend on http 
-- in swagger test the first Endpoint by entering a city or harbour in Australia like *Brisbane* to get all ocean pollutants for that area
+The application was developed in an interdisciplinary international team environment during an academic project.  
+It combines software engineering, data visualization and immersive technologies to create an interactive underwater experience driven by real pollution datasets.
 
-#### UNREAL ENGINE EXE #######
-How to play
--W forward S backwards A to the left side and D for the right
--go up with spacebar
--go down with CTRL
--Go closer to the shinny balls of light to get information the balls will guide you until the trash dangerous zone but you can always walk freely in the map
-****************************    LINK FOR UNREAL ENGINE EXE     ****************************************
-https://we.tl/t-qz4QrR2hwx
+Users can:
+- explore underwater environments,
+- retrieve pollution information for ocean regions,
+- interact with immersive 3D scenes,
+- and access environmental datasets through RESTful APIs.
+
+---
+
+# Features
+
+- RESTful backend API with ASP.NET
+- Interactive React frontend
+- MySQL-based environmental dataset management
+- Ocean pollution data visualization
+- Unreal Engine underwater exploration environment
+- Swagger API testing interface
+- Interactive geospatial pollution queries
+- Responsive frontend animations
+
+---
+
+# Tech Stack
+
+## Frontend
+- React
+- TypeScript
+- HTML5 / CSS3
+
+## Backend
+- ASP.NET
+- C#
+- REST APIs
+- Swagger
+
+## Database
+- MySQL
+
+## 3D / Immersive Environment
+- Unreal Engine 5
+- Blueprints
+
+## Tooling
+- Git
+- npm
+- MAMP
+
+---
+
+# System Architecture
+
+The system follows a modular client-server architecture:
+
+- The React frontend communicates with the ASP.NET backend through REST APIs.
+- The backend processes environmental queries and retrieves pollution data from MySQL.
+- Swagger is used for API testing and endpoint validation.
+- Unreal Engine provides an immersive visualization layer for interacting with environmental information.
+
+---
+
+# API Example
+
+Example request for retrieving pollution data:
+
+```http
+GET /api/pollution?location=Brisbane
+```
+
+The API returns ocean pollution information for specific coastal regions and harbours.
+
+---
+
+# Local Development Setup
+
+## Clone Repository
+
+```bash
+git clone <repository-url>
+```
+
+---
+
+## Frontend Setup
+
+```bash
+cd client
+npm install
+npm start
+```
+
+Recommended browsers:
+- Chrome
+- Firefox
+
+---
+
+## Backend Setup
+
+### Requirements
+- MAMP
+- MySQL Workbench
+
+### Database Setup
+
+1. Start MAMP
+2. Ensure MySQL runs on port `3306`
+3. Import the provided SQL dataset into MySQL Workbench
+4. Configure database credentials in:
+
+```txt
+appsettings.Development.json
+```
+
+### Start Backend
+
+Navigate to:
+
+```txt
+Properties/launchSettings.json
+```
+
+and select the HTTP launch configuration.
+
+Swagger can then be used to test API endpoints.
+
+---
+
+# Unreal Engine Environment
+
+The Unreal Engine prototype provides an immersive underwater exploration experience.
+
+## Controls
+
+| Action | Key |
+|---|---|
+| Move Forward | W |
+| Move Backward | S |
+| Move Left | A |
+| Move Right | D |
+| Move Up | Space |
+| Move Down | CTRL |
+
+Interactive light markers guide users through areas containing environmental information and polluted zones.
+
+---
+
+# Project Goals
+
+The project explores:
+- environmental data visualization,
+- immersive storytelling,
+- interactive educational experiences,
+- and API-driven software systems.
+
+The goal was to combine immersive technologies with environmental awareness and modern full-stack software engineering practices.
+
+---
+
+# Responsibilities
+
+My primary contributions included:
+
+- Full-stack development with React and TypeScript for the Frontend and C# for the Backend
+- API integration
+- Database interaction
+- Integration of environmental data into the frontend experience
+
+---
+
+# Future Improvements
+
+Potential future extensions include:
+
+- Dockerized deployment
+- Cloud hosting
+- Real-time environmental datasets
+- Authentication and user profiles
+- Advanced geospatial visualization
+- Performance optimization for large datasets
+
+---
+
+# Contributors
+
+Developed collaboratively by:
+
+- Janniella Heimig
+- Maria Guerreiro
+- Lisa Kohls
