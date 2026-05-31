@@ -26,10 +26,10 @@ jobs:
           dotnet-version: "7.x"
 
       - name: Restore dependencies
-        run: dotnet restore MindfulOcean.sln
+        run: dotnet restore Mindful_Ocean_Web.sln
 
       - name: Build
-        run: dotnet build MindfulOcean.sln --no-restore --configuration Release
+        run: dotnet build Mindful_Ocean_Web.sln --no-restore --configuration Release
 
       - name: Test
-        run: dotnet test MindfulOcean.sln --no-build --configuration Release
+        run: dotnet test Mindful_Ocean_Web.sln --no-build --configuration Release
