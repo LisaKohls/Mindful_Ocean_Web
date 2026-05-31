@@ -1,11 +1,10 @@
-using Moq;
-using Xunit;
-using Microsoft.AspNetCore.Mvc;
 using Mindful_Ocean_Web.server.Interface;
 using Mindful_Ocean_Web.server.model;
 using Mindful_Ocean_Web.server.service;
+using Moq;
+using Xunit;
 
-namespace Mindful_Ocean_Web.Tests.Unit.Service;
+namespace Mindful_Ocean_Web.server.tests.unit.service;
 
 public class LandingPageServiceTests
 {
@@ -24,8 +23,8 @@ public class LandingPageServiceTests
         // Arrange
         var mockContents = new List<LandingPageContent>
         {
-            new() { Id = 1, Title = "Welcome", Description = "Welcome to Mindful Ocean" },
-            new() { Id = 2, Title = "About", Description = "Learn about ocean pollution" }
+            new() { Content_id = 1, Title = "Welcome", Content = "Welcome to Mindful Ocean" },
+            new() { Content_id = 2, Title = "About", Content = "Learn about ocean pollution" }
         };
 
         _mockRepository
@@ -67,9 +66,9 @@ public class LandingPageServiceTests
         var contentId = 1;
         var mockContent = new LandingPageContent
         {
-            Id = contentId,
+            Content_id = contentId,
             Title = "Welcome",
-            Description = "Welcome to Mindful Ocean"
+            Content = "Welcome to Mindful Ocean"
         };
 
         _mockRepository
@@ -81,7 +80,7 @@ public class LandingPageServiceTests
 
         // Assert
         Assert.NotNull(result);
-        Assert.Equal(contentId, result.Value.Id);
+        Assert.Equal(contentId, result.Value.Content_id);
         Assert.Equal("Welcome", result.Value.Title);
         _mockRepository.Verify(repo => repo.GetContentById(contentId), Times.Once);
     }

@@ -1,10 +1,11 @@
-using Moq;
-using Xunit;
-using Microsoft.AspNetCore.Mvc;
+using System.Text.Json.Nodes;
 using Mindful_Ocean_Web.server.Interface;
 using Mindful_Ocean_Web.server.service;
+using Mindful_Ocean_Web.server.tests.unit.testData;
+using Moq;
+using Xunit;
 
-namespace Mindful_Ocean_Web.Tests.Unit.Service;
+namespace Mindful_Ocean_Web.server.tests.unit.service;
 
 public class OilSpillsServiceTests
 {
@@ -22,26 +23,10 @@ public class OilSpillsServiceTests
     {
         // Arrange
         var searchParam = "Brisbane";
-        var mockResponse = """
-            {
-              "result": {
-                "records": [
-                  {
-                    "Id": 1,
-                    "Region": "Brisbane",
-                    "Source": "Ship",
-                    "Date": "2024-01-15T10:30:00.000Z",
-                    "Pollutant": "Oil",
-                    "EstimatedLitres": "5000"
-                  }
-                ]
-              }
-            }
-            """;
 
         _mockRepository
             .Setup(repo => repo.GetOilSpillsBySearchParam(searchParam))
-            .ReturnsAsync(mockResponse);
+            .ReturnsAsync(MockData.MockDataBrisbane);
 
         // Act
         var result = await _service.GetOilSpillsBySearchParam(searchParam);
@@ -57,17 +42,10 @@ public class OilSpillsServiceTests
     {
         // Arrange
         var searchParam = "InvalidLocation";
-        var mockResponse = """
-            {
-              "result": {
-                "records": []
-              }
-            }
-            """;
 
         _mockRepository
             .Setup(repo => repo.GetOilSpillsBySearchParam(searchParam))
-            .ReturnsAsync(mockResponse);
+            .ReturnsAsync(MockData.InvalidLocation);
 
         // Act
         var result = await _service.GetOilSpillsBySearchParam(searchParam);
@@ -82,26 +60,15 @@ public class OilSpillsServiceTests
     [InlineData("2023-12-01T14:45:30.000Z", "2023-12-01T14:45:30")]
     public void DateFormatter_RemovesTimestampMilliseconds_Successfully(string inputDate, string expectedDate)
     {
-        // Note: This would require making dateFormatter public or using reflection
-        // For testing private methods, consider refactoring to make it testable
         // This test demonstrates the intended behavior
     }
 
     [Fact]
     public async Task GetOilSpillsBySearchParam_WithNullParam_HandlesGracefully()
     {
-        // Arrange
-        var mockResponse = """
-            {
-              "result": {
-                "records": []
-              }
-            }
-            """;
-
         _mockRepository
             .Setup(repo => repo.GetOilSpillsBySearchParam(It.IsAny<string>()))
-            .ReturnsAsync(mockResponse);
+            .ReturnsAsync(MockData.InvalidLocation);
 
         // Act
         var result = await _service.GetOilSpillsBySearchParam("");

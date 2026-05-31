@@ -1,11 +1,9 @@
+using Mindful_Ocean_Web.server.repository;
+using Mindful_Ocean_Web.server.tests.unit.testData;
 using Moq;
 using Xunit;
-using Microsoft.AspNetCore.Mvc;
-using Mindful_Ocean_Web.server.Interface;
-using Mindful_Ocean_Web.server.model;
-using Mindful_Ocean_Web.server.repository;
 
-namespace Mindful_Ocean_Web.Tests.Unit.Repository;
+namespace Mindful_Ocean_Web.server.tests.unit.repository;
 
 public class OilSpillsRepositoryTests
 {
@@ -23,24 +21,10 @@ public class OilSpillsRepositoryTests
     {
         // Arrange
         var searchParam = "Brisbane";
-        var mockResponseContent = """
-            {
-              "result": {
-                "records": [
-                  {
-                    "Id": 1,
-                    "Region": "Brisbane",
-                    "Source": "Ship",
-                    "Date": "2024-01-15T10:30:00Z"
-                  }
-                ]
-              }
-            }
-            """;
 
         var httpResponseMessage = new HttpResponseMessage(System.Net.HttpStatusCode.OK)
         {
-            Content = new StringContent(mockResponseContent)
+            Content = new StringContent(MockData.MockDataBrisbane)
         };
 
         _mockHttpClient
@@ -61,17 +45,10 @@ public class OilSpillsRepositoryTests
     {
         // Arrange
         var searchParam = "NonexistentLocation";
-        var mockResponseContent = """
-            {
-              "result": {
-                "records": []
-              }
-            }
-            """;
 
         var httpResponseMessage = new HttpResponseMessage(System.Net.HttpStatusCode.OK)
         {
-            Content = new StringContent(mockResponseContent)
+            Content = new StringContent(MockData.InvalidLocation)
         };
 
         _mockHttpClient
